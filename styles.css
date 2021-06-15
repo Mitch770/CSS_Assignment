@@ -21,10 +21,10 @@ header {
 .item {
     border: currentColor;
 }
-:nth-child(even) {
+.even {
     background-color: grey;
 }
-:nth-child(odd) {
+.odd {
     background-color: black;
     color: white;
 }
@@ -34,32 +34,23 @@ header {
 #item2 {
     text-align: right;
 }
+#advanced-selectors ol li p {
+    background-color: grey;
+    padding: 10px;
+}
+
+#advanced-selectors ul>li:nth-child(2n + 1) {
+    background-color: green;
+}
+
+a[title = 'CodeDev']:hover {
+    text-decoration: none;
+}
 
 
-
-
-
-
-Advanced Selectors
-Here we'll play around with using more advanced selectors to target elements more specifically. 
-You'll need to make use of pseudo-class selectors, attribute selectors and relationship-based selectors 
-to complete the tasks in this section.
-
-Style every item in this list with some padding and a background-color of grey
-
-Make sure that the list of subitems below isn't affected by the above style rules! (Note - if you happen to use a 
-relationship-based selector to do this, the background color may not change - why might that be?)
-
-Use the :nth-child pseudo-selector to turn the background-color of every odd list item green.
-
-Select this link by its title attribute and turn off the underline when it's hovered CodeDev
-
-The links in this list should have a background-color of yellow when hovered and red when active. This shouldn't 
-affect the links elsewhere in the document.
-
-Subitem 001
-Subitem 002
-Subitem 003
-Subitem 004
-Subitem 005
-Keep playing around, try combining CSS selectors and see what happens!
+#advanced-selectors ul>li>a:hover {
+    background-color:yellow;
+}
+#advanced-selectors ul>li>a:active {
+    background-color:red;
+}
