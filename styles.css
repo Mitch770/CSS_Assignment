@@ -1,2 +1,65 @@
 /* Move your styles here when you're ready to clean up your HTML file */
 /* Don't forget to link to this file in your HTML, otherwise your styles won't show up! */
+
+
+* {
+    font-size: xx-large;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+        border-bottom: crimson;
+}
+
+.item {
+    border: currentColor;
+}
+:nth-child(even) {
+    background-color: grey;
+}
+:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+#itewm1 {
+    font-size: 30px;
+}
+#item2 {
+    text-align: right;
+}
+
+
+
+
+
+
+Advanced Selectors
+Here we'll play around with using more advanced selectors to target elements more specifically. 
+You'll need to make use of pseudo-class selectors, attribute selectors and relationship-based selectors 
+to complete the tasks in this section.
+
+Style every item in this list with some padding and a background-color of grey
+
+Make sure that the list of subitems below isn't affected by the above style rules! (Note - if you happen to use a 
+relationship-based selector to do this, the background color may not change - why might that be?)
+
+Use the :nth-child pseudo-selector to turn the background-color of every odd list item green.
+
+Select this link by its title attribute and turn off the underline when it's hovered CodeDev
+
+The links in this list should have a background-color of yellow when hovered and red when active. This shouldn't 
+affect the links elsewhere in the document.
+
+Subitem 001
+Subitem 002
+Subitem 003
+Subitem 004
+Subitem 005
+Keep playing around, try combining CSS selectors and see what happens!
